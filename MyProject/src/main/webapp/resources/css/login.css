@@ -1,0 +1,243 @@
+@charset "EUC-KR";
+
+#login{
+	
+	position: absolute;
+	top: 14px;
+	right: 400px;
+	font-size: 12pt;
+	font-weight: 800;
+	color: #a8a8a8;
+	cursor: pointer;
+	
+}
+
+#login:hover,#joinId:hover{
+	
+	color: #000000;
+	
+}
+
+#joinId{
+	
+	position: absolute;
+	top: 14px;
+	right: 320px;
+	font-size: 12pt;
+	font-weight: 800;
+	color: #a8a8a8;
+	cursor: pointer;
+	
+}
+
+
+#loginMenu{
+	
+	position: absolute;
+	top: 230px;
+	left: 560px;
+	
+}
+
+#loginMenu input{
+
+	outline: none;
+	height: 40px;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#id,#pw{
+	
+	width: 400px;
+	padding-left: 8px;
+	
+}
+
+
+#loginbtn{
+	
+	width: 410px;
+	background-color: white;
+	border: none;
+	color: #9d9d9d;
+	cursor: pointer;
+	border-bottom: #c9c9c9 solid 1px;
+	
+}
+
+#joinId2{
+	
+	font-size: 12pt;
+	font-weight: 600;
+	color: #9d9d9d;
+	cursor: pointer;
+	position: absolute;
+	top: 520px;
+	left: 890px;
+}
+
+#joinId2:hover,#findId:hover{
+	
+	color: #3d3d3d; 
+	
+}
+
+#findId{
+	
+	font-size: 12pt;
+	font-weight: 600;
+	color: #9d9d9d;
+	position: absolute;
+	top: 520px;
+	left: 700px;
+	cursor: pointer;
+	
+}
+
+#saveId{
+	
+	position: absolute;
+	top: 520px;
+	left: 560px;
+	color: #9d9d9d;
+	font-size: 16px;
+	font-weight: 600;
+	
+}
+
+#saveId input{
+	
+	vertical-align: middle;
+	
+}
+
+#saveId:active{
+	
+	color: black;
+	
+}
+
+#joinIdMenu{
+	
+	position: absolute;
+	top: 140px;
+	left: 560px;
+	
+}
+
+#joinIdMenu input{
+
+	outline: none;
+	height: 40px;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#idJoin,#pwJoin,#pw2Join,#nameJoin,#addrJoin{
+	
+	padding-left:8px;
+	width: 439px;
+	
+}
+
+#numJoin,#numJoin2{
+	
+	padding-left: 8px;
+	width: 205px;
+	
+}
+
+#joinIdBtn{
+	
+	width: 452px;
+	border: none;
+	cursor: pointer;
+	background-color: white;
+	color: #9d9d9d;
+	border-bottom: #c9c9c9 solid 1px;
+	
+}
+
+.check{
+	
+	color: red;
+	font-size: 10pt;
+	font-weight: 800;
+	
+}
+
+#loginOk{
+	
+	position: absolute;
+	top: 14px;
+	right: 300px;
+	font-size: 12pt;
+	font-weight: 800;
+	color: #a8a8a8;
+	
+}
+
+#loginName{
+	
+	padding-right: 13px;
+	
+}
+
+
+#loginName:hover,#logOut:hover{
+	
+	color: #000000;
+	cursor: pointer;
+	
+}
+
+#goSideMenu a{
+	
+	text-decoration: none;
+	
+}
+
+#logOut{
+	
+	outline: none;
+	color: #a8a8a8;
+	text-decoration: none;
+	
+}
+
+#findLogin{
+	
+	position: absolute;
+	top: 240px;
+	left: 570px;
+	
+}
+
+#findLogin div{
+	
+	border: #000000 solid 2px;
+	width: 390px;
+	height : 60px;
+	margin-bottom: 50px;
+	font-size: 15pt;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 30px;	
+	
+}
+
+#findLogin div a{
+	
+	cursor: pointer;
+	color: #a8a8a8;
+	
+}
+
+#findLogin div a:hover{
+	
+	color: black;
+	
+}

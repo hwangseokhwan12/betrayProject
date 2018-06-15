@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soldesk.mp.login.LoginMapper">
+
+	<insert id="joinMember" parameterType="com.soldesk.mp.login.member">
+	insert into member values(#{id},#{pw},#{name},#{address},#{innate},#{innate2})
+	</insert>
+	
+	<select id="idCheck" parameterType="com.soldesk.mp.login.member" resultType="com.soldesk.mp.login.member">
+	select id from member where id = #{id}
+	</select>
+	
+	<select id="loginOk" parameterType="com.soldesk.mp.login.member" resultType="com.soldesk.mp.login.member">
+	select * from member where id = #{id}
+	</select>
+
+	<select id="findId" parameterType="com.soldesk.mp.login.member" resultType="com.soldesk.mp.login.member">
+	select id from member where name = #{name} and innate = #{innate} and innate2 = #{innate2}
+	</select>
+
+
+</mapper>
