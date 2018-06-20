@@ -10,6 +10,9 @@ public interface LoginMapper {
 	
 	public abstract member loginOk(member m);
 	
-	public abstract int findId(member m);
+	public abstract member findId(member m);
+	
+	public abstract member findPw(member m);
+	
 	
 }

@@ -55,18 +55,18 @@ public class LoginDAO {
 					hs.setAttribute("loginMember", dbM);
 					hs.setMaxInactiveInterval(1200);
 					req.setAttribute("r", "로그인 성공");
-					
+
 					if (req.getParameter("autoLoginCheck") != null) {
-						
-						Cookie c = new Cookie("autoLoginCheck" ,dbM.getId());
+
+						Cookie c = new Cookie("autoLoginCheck", dbM.getId());
 						c.setMaxAge(1 * 60 * 60 * 24);
-						res.addCookie(c);  
-						
+						res.addCookie(c);
+
 					}
-					
+
 				} else {
 					req.setAttribute("r", "비밀번호 오류");
-					
+
 				}
 
 			} else {
@@ -88,79 +88,86 @@ public class LoginDAO {
 			return true;
 		} else {
 			req.setAttribute("sideMenu", "sidemenu/sideMenu.jsp");
-			return false; 
+			return false;
 		}
 
 	}
 
 	public void logout(HttpServletRequest req, HttpServletResponse res) {
-		
+
 		req.getSession().setAttribute("loginMember", null);
-		
+
 		Cookie[] cookies = req.getCookies();
-		
+
 		if (cookies != null) {
 			for (Cookie c : cookies) {
-				
+
 				if (c.getName().equals("autoLoginCheck")) {
 					c.setValue(null);
 					res.addCookie(c);
 				}
-				
+
 			}
 		}
-		
+
 	}
-	
+
 	public void autoLogin(HttpServletRequest req, HttpServletResponse res) {
-		
+
 		Cookie[] cookies = req.getCookies();
-		
+
 		if (cookies != null) {
 			for (Cookie c : cookies) {
-				
+
 				if (c.getName().equals("autoLoginCheck")) {
-						
+
 					String id = c.getValue();
-					
+
 					if (id != null) {
 						member m = new member();
 						m.setId(id);
-						
+
 						member dbM = ss.getMapper(LoginMapper.class).loginOk(m);
-						
+
 						if (dbM != null) {
-							
+
 							HttpSession hs = req.getSession();
 							hs.setAttribute("loginMember", dbM);
 							hs.setMaxInactiveInterval(1200);
-							
+
 						}
-						
+
 					}
-					
+
 				}
-				
+
 			}
 		}
-		
+
 	}
-	
+
 	public void findId(HttpServletRequest req, HttpServletResponse res, member m) {
-		
+
 		try {
 
-			if (ss.getMapper(LoginMapper.class).findId(m) == 1) {
-				req.setAttribute("r","조회 성공");
-			}else {
-				req.setAttribute("r","조회 실패");
-			}
-			
+			req.setAttribute("findResult", ss.getMapper(LoginMapper.class).findId(m));
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	
-	
+
+	public void findPw(HttpServletRequest req, HttpServletResponse res, member m) {
+
+		try {
+
+			req.setAttribute("findResult", ss.getMapper(LoginMapper.class).findPw(m));
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
 }

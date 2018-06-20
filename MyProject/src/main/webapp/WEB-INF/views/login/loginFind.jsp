@@ -11,11 +11,11 @@
 <div id="findLogin">
 	
 	<div>
-	<a>아이디 찾기</a>
+	<a href="go.findId">아이디 찾기</a>
 	</div>
 
 	<div>
-	<a>비밀번호 찾기</a>
+	<a href="go.findPw">비밀번호 찾기</a>
 	</div>
 	
 </div>

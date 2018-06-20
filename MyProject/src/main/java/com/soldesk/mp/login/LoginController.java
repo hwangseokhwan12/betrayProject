@@ -62,12 +62,60 @@ public class LoginController {
 		
 	}
 	
+	@RequestMapping(value = "logout.ok", method = RequestMethod.GET)
+	public String logOut(HttpServletRequest req, HttpServletResponse res, member m) {
+		LDAO.logout(req, res);
+		LDAO.loginCheck(req, res);
+		req.setAttribute("content", "content/main.jsp");
+		
+		return "index";
+		
+	} 
+	
 	@RequestMapping(value = "find.login", method = RequestMethod.GET)
-	public String logout(HttpServletRequest req, HttpServletResponse res) {
+	public String findMember(HttpServletRequest req, HttpServletResponse res) {
 		
 		req.setAttribute("sideMenu", "sidemenu/sideMenu.jsp");
 		req.setAttribute("content", "login/loginFind.jsp"); 
 	
+		return "index"; 
+	}
+	
+	@RequestMapping(value = "go.findId", method = RequestMethod.GET)
+	public String goFindId(HttpServletRequest req, HttpServletResponse res) {
+		
+		req.setAttribute("sideMenu", "none.jsp");
+		req.setAttribute("content", "login/findId.jsp"); 
+		
+		return "index"; 
+	}
+	
+	@RequestMapping(value = "go.findPw", method = RequestMethod.GET)
+	public String goFindPw(HttpServletRequest req, HttpServletResponse res) {
+		
+		req.setAttribute("sideMenu", "none.jsp");
+		req.setAttribute("content", "login/findPw.jsp"); 
+		
+		return "index"; 
+	}
+	
+	@RequestMapping(value = "find.id", method = RequestMethod.GET)
+	public String FindId(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		LDAO.findId(req, res, m);
+		req.setAttribute("sideMenu", "sidemenu/sideMenu.jsp");
+		req.setAttribute("content", "login/findResult.jsp"); 
+		 
+		return "index"; 
+	}
+	
+	@RequestMapping(value = "find.pw", method = RequestMethod.GET)
+	public String FindPw(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		LDAO.findPw(req, res, m);
+		req.setAttribute("sideMenu", "sidemenu/sideMenu.jsp");
+		req.setAttribute("content", "login/findResult.jsp"); 
+		
 		return "index"; 
 	}
 	

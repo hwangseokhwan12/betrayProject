@@ -8,16 +8,22 @@
 </head>
 <body>
 
-	<div id="findLogin">
+	<div id="loginFind">
+	<form action="find.id">
 	
 	<div>
-	<input id="name">
+	<input id="name" name="name" placeholder="이름">
 	</div>
 
 	<div>
-	<input id="innate">
+	<input id="innate" name="innate" placeholder="주민번호 앞자리">
+	</div>  
+	
+	<div>
+	<input type="submit" value="찾기" id="findBtn">
 	</div>
 	
+	</form>
 </div>
 
 </body>

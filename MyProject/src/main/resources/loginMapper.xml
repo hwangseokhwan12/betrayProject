@@ -17,8 +17,12 @@
 	</select>
 
 	<select id="findId" parameterType="com.soldesk.mp.login.member" resultType="com.soldesk.mp.login.member">
-	select id from member where name = #{name} and innate = #{innate} and innate2 = #{innate2}
+	select id,name from member where name = #{name} and innate = #{innate}
 	</select>
-
-
+	
+	<select id="findPw" parameterType="com.soldesk.mp.login.member" resultType="com.soldesk.mp.login.member">
+	select pw,name from member where id = #{id} and name = #{name} and innate = #{innate}
+	</select>
+	
+	
 </mapper>
