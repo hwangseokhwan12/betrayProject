@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,12 +8,11 @@
 </head>
 <body>
 
-	<div id="loginOk">
-	<span id="loginName">${loginMember.id }</span>
-	<a id="myPage" href="">마이페이지</a>
-	<a id="writeBoard">게시글 쓰기</a>
-	<a id="logOut" href="logout.ok">로그아웃</a>
+	<div id="myPage">
+		<div>정보 수정</div>
+		<div>내 게시글</div>
+		<div>쪽지함</div>
 	</div>
-	
+
 </body>
 </html>

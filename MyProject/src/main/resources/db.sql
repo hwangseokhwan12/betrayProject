@@ -22,3 +22,16 @@ select * from member where id = 'rex123';
 
 select id from member where name = 'ȫ�浿' and innate = '111111' and innate2 = '1111111';
 
+
+create table board(
+
+		
+
+
+);
+
+
+
+
+
+

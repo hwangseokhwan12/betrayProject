@@ -173,21 +173,15 @@
 	
 	position: absolute;
 	top: 14px;
-	right: 300px;
+	right: 270px;
 	font-size: 12pt;
-	font-weight: 800;
+	font-weight: 700;
 	color: #a8a8a8;
+	padding-right: 3px;
 	
 }
 
-#loginName{
-	
-	padding-right: 13px;
-	
-}
-
-
-#loginName:hover,#logOut:hover{
+#logOut:hover,#myPage:hover,#writeBoard:hover{
 	
 	color: #000000;
 	cursor: pointer;

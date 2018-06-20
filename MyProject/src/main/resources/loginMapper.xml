@@ -24,5 +24,4 @@
 	select pw,name from member where id = #{id} and name = #{name} and innate = #{innate}
 	</select>
 	
-	
 </mapper>
