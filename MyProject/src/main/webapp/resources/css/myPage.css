@@ -1,0 +1,81 @@
+@charset "EUC-KR";
+
+#goMyPage{
+	
+	text-decoration: none;
+	color: #a8a8a8;
+	
+}
+
+#myPage{
+	
+	margin-top: 30px;
+	display: table;
+	margin-left: 310px;
+	color: #aeaeae;
+	
+}
+
+
+#changeData{
+	
+	box-shadow: #000000 2px 2px 2px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+#changeData{
+	
+	box-shadow: #000000 2px 2px 2px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#myBoard{
+	
+	box-shadow: #000000 2px 2px 2px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#msg{
+	
+	box-shadow: #000000 2px 2px 2px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#myPage div span:hover{
+	
+	cursor: pointer;
+	color: black;
+	
+}
+

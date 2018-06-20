@@ -19,7 +19,7 @@ public class LoginController {
 	@RequestMapping(value = "go.joinIdMenu", method = RequestMethod.GET)
 	public String goJoinIdMenu(HttpServletRequest req, HttpServletResponse res) {
 		
-		req.setAttribute("sideMenu", "none.jsp");
+		LDAO.loginCheck(req, res);
 		req.setAttribute("content", "login/joinIdMenu.jsp");
 		return "index";
 		
@@ -28,7 +28,7 @@ public class LoginController {
 	@RequestMapping(value = "go.login", method = RequestMethod.GET)
 	public String goLogin(HttpServletRequest req, HttpServletResponse res) {
 		
-		req.setAttribute("sideMenu", "none.jsp");
+		LDAO.loginCheck(req, res);
 		req.setAttribute("content", "login/loginMenu.jsp");
 		return "index";
 		
@@ -54,6 +54,7 @@ public class LoginController {
 
 	@RequestMapping(value = "login.ok", method = RequestMethod.POST)
 	public String loginOk(HttpServletRequest req, HttpServletResponse res, member m) {
+		
 		LDAO.loginOk(req, res, m);
 		LDAO.loginCheck(req, res);
 		req.setAttribute("content", "content/main.jsp");
@@ -64,6 +65,7 @@ public class LoginController {
 	
 	@RequestMapping(value = "logout.ok", method = RequestMethod.GET)
 	public String logOut(HttpServletRequest req, HttpServletResponse res, member m) {
+		
 		LDAO.logout(req, res);
 		LDAO.loginCheck(req, res);
 		req.setAttribute("content", "content/main.jsp");

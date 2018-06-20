@@ -9,9 +9,9 @@
 <body>
 
 	<div id="myPage">
-		<div>정보 수정</div>
-		<div>내 게시글</div>
-		<div>쪽지함</div>
+		<div id="changeData"><span onclick="goChangeMyPage();">정보 수정</span></div>
+		<div id="myBoard"><span>내 게시글</span></div>
+		<div id="msg"><span>쪽지함</span></div>
 	</div>
 
 </body>
