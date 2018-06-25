@@ -181,7 +181,7 @@
 	
 }
 
-#logOut:hover,#myPage:hover,#writeBoard:hover{
+#logOut:hover,#goMyPage:hover,#writeBoard:hover{
 	
 	color: #000000;
 	cursor: pointer;

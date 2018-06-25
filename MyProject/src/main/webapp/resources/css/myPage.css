@@ -1,0 +1,160 @@
+@charset "EUC-KR";
+
+#goMyPage{
+	
+	text-decoration: none;
+	color: #a8a8a8;
+	
+}
+
+#myPage{
+	
+	margin-top: 30px;
+	display: table;
+	margin-left: 240px;
+	color: #aeaeae;
+	border-spacing: 40px;
+		
+}
+
+#changeData{
+	
+	box-shadow: #505050 4px 4px 4px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#myBoard{
+	
+	box-shadow: #505050 3px 3px 3px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#msg{
+	
+	box-shadow: #505050 2px 2px 2px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#myPage div span:hover{
+	
+	cursor: pointer;
+	color: black;
+	
+}
+
+#myDataPage{
+
+	display: table;
+	margin-left: 290px;
+	color: #aeaeae;
+	border-spacing: 100px;
+	-webkit-transition: all 0.4s ease-out;
+}
+
+#pwChange{
+	
+	box-shadow: #505050 4px 4px 4px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+#memberDelete{
+	
+	box-shadow: #868686 3px 3px 4px;
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: 700;
+	
+}
+
+
+#myDataPage div span:hover{
+	
+	cursor: pointer;
+	color: black;
+	
+}
+
+#changePwCheck{
+	
+	width: 500px;
+	border: #7d7d7d solid 2px;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-left : 30px;
+	padding-bottom: 3px;
+	position: absolute;
+	top: 380px;
+	left: 550px;
+	
+}
+
+#changePwCheck input{
+	
+	border: none;
+	border-bottom: #7d7d7d solid 2px;
+	font-size: 13pt;
+	font-weight: 800;
+	outline: none;
+	width: 90%;
+	
+}
+
+#changeBtn{
+	
+	width : 80px;
+	height : 60px;
+	position: absolute;
+	top: 380px;
+	right: 430px;
+	border: #bfbfbf groove 2px;
+	border-radius: 15px;
+	background-color: white;
+	font-size: 11pt; 
+	font-weight: 700;
+	color: #959595;
+	cursor: pointer;
+	
+}
+
+#changePw{
+	
+	display: none;
+	
+}

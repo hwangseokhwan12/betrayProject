@@ -197,3 +197,9 @@ function validCheck() {
 	innateCheck();
 	
 }
+
+function loginBtnCheck() {
+	
+	
+	
+}
