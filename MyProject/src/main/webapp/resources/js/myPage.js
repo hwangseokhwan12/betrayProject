@@ -37,7 +37,9 @@ function ChangePw() {
 						
 						$("#changePwCheck").append(input);
 						
-						check = 3;
+						$("#changePwForm").attr("onsubmit","return true;");
+						
+						
 						
 					}else {
 					

@@ -44,13 +44,16 @@ public class MyPageController {
 		
 	}
 	
+	@RequestMapping(value = "change.pw", method = RequestMethod.GET)
+	public String changePw(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		LDAO.loginCheck(req, res);
+		LDAO.changePw(req, res, m);
+		req.setAttribute("content", "myPage/resultPage.jsp");
+		return "index"; 
+		
+	}
 	
-	@RequestMapping(value = "change.pw", method = RequestMethod.POST, produces = "application/xml; charset=utf-8")
-	public @ResponseBody members changePw(HttpServletRequest req, HttpServletResponse res, member m) {
-		
-		return LDAO.checkId(req, res, m);
-		
-	} 
 	
 	
 	

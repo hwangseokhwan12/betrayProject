@@ -171,28 +171,26 @@ public class LoginDAO {
 	}
 
 	public members checkPw(HttpServletRequest req, HttpServletResponse res, member m) {
-		
+
 		return new members(ss.getMapper(LoginMapper.class).checkPw(m));
 
 	}
-	
-	public void changepw(HttpServletRequest req, HttpServletResponse res, member m) {
-		
+
+	public void changePw(HttpServletRequest req, HttpServletResponse res, member m) {
+
 		try {
-			
-			String pw = req.getParameter("pw");
-			
-			if (pw.equals(ss.getMapper(LoginMapper.class).loginOk(m).getPw())) {
-				
-				
-				
+
+			if (ss.getMapper(LoginMapper.class).changePw(m) == 1) {
+				req.setAttribute("r", "성공");
+			} else {
+				req.setAttribute("r", "실패");
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
+			req.setAttribute("r", "오류");
 		}
-		
+
 	}
-	
-	
+
 }

@@ -28,9 +28,9 @@
 	select pw from member where id = #{id}
 	</select>
 	
-	<select id="changePw" parameterType="com.soldesk.mp.login.member" resultType="com.soldesk.mp.login.member">
+	<update id="changePw" parameterType="com.soldesk.mp.login.member">
 	update member set pw = #{pw} where id like #{id}
-	</select>
+	</update>
 	
 	
 </mapper>

@@ -13,10 +13,9 @@ public interface LoginMapper {
 	public abstract member findId(member m);
 	
 	public abstract member findPw(member m);
-	
-	public abstract member changePw(member m);
-	
+		
 	public abstract List<member> checkPw(member m);
 	
+	public abstract int changePw(member m);
 	
 }

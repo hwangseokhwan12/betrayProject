@@ -14,7 +14,7 @@
 	</div>
  
 	<div id="changePw">	 
-	<form action="change.pw" onsubmit="return false;">
+	<form action="change.pw" onsubmit="return false;" id="changePwForm">
 		<input id="idHidden" name="id" value="${sessionScope.loginMember.id }">
 		<div id="changePwCheck">
 			<input placeholder="기존의 비밀번호를 입력하세요" name="pw" id="oldPw"><p>
