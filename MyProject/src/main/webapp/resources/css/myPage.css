@@ -150,11 +150,33 @@
 	font-weight: 700;
 	color: #959595;
 	cursor: pointer;
-	
+	 
 }
 
 #changePw{
 	
 	display: none;
+	
+}
+
+#idHidden{
+	
+	visibility: hidden;
+	
+}
+
+#pwchk{
+	
+	display: none;
+	font-size: 11pt;
+	font-weight: 700;
+	color: red;
+	
+}
+
+
+#tr td{
+	
+	
 	
 }

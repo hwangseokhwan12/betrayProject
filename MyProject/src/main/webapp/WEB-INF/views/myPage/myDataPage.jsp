@@ -12,13 +12,15 @@
 		<div id="pwChange"><span>비밀번호 변경</span></div>
 		<div id="memberDelete"><span>회원 탈퇴</span></div>
 	</div>
-
-	<div id="changePw">	
-	<form action="">
+ 
+	<div id="changePw">	 
+	<form action="change.pw" onsubmit="return false;">
+		<input id="idHidden" name="id" value="${sessionScope.loginMember.id }">
 		<div id="changePwCheck">
-			<input placeholder="기존의 비밀번호를 입력하세요" name="pw"><p>
+			<input placeholder="기존의 비밀번호를 입력하세요" name="pw" id="oldPw"><p>
+			<span id="pwchk">비밀번호가 일치하지 않습니다.</span>
 		</div>
-			<input type="submit" value="확인" id="changeBtn">
+			<input type="submit" value="확인" id="changeBtn" >
 		</form>
 	</div>
 

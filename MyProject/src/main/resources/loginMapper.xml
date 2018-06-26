@@ -24,4 +24,13 @@
 	select pw,name from member where id = #{id} and name = #{name} and innate = #{innate}
 	</select>
 	
+	<select id="checkPw" parameterType="com.soldesk.mp.login.member" resultType="com.soldesk.mp.login.member">
+	select pw from member where id = #{id}
+	</select>
+	
+	<select id="changePw" parameterType="com.soldesk.mp.login.member" resultType="com.soldesk.mp.login.member">
+	update member set pw = #{pw} where id like #{id}
+	</select>
+	
+	
 </mapper>

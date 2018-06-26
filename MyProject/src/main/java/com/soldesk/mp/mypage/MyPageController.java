@@ -7,8 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.soldesk.mp.login.LoginDAO;
+import com.soldesk.mp.login.member;
+import com.soldesk.mp.login.members;
 
 @Controller
 public class MyPageController {
@@ -33,6 +36,21 @@ public class MyPageController {
 		return "index"; 
 		
 	}
+	
+	@RequestMapping(value = "check.pw", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
+	public @ResponseBody members checkPw(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		return LDAO.checkPw(req, res, m);
+		
+	}
+	
+	
+	@RequestMapping(value = "change.pw", method = RequestMethod.POST, produces = "application/xml; charset=utf-8")
+	public @ResponseBody members changePw(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		return LDAO.checkId(req, res, m);
+		
+	} 
 	
 	
 	

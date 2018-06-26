@@ -8,25 +8,25 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class members {
 
-	List<member> members;
-	
+	List<member> member;
+
 	public members() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public members(List<member> members) {
+	public List<member> getMember() {
+		return member;
+	}
+
+	public void setMember(List<member> member) {
+		this.member = member;
+	}
+
+	public members(List<com.soldesk.mp.login.member> member) {
 		super();
-		this.members = members;
-	}
-
-	@XmlElement
-	public List<member> getMembers() {
-		return members;
-	}
-
-	public void setMembers(List<member> members) {
-		this.members = members;
+		this.member = member;
 	}
 
 	
+
 }

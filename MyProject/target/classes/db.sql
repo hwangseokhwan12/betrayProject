@@ -22,16 +22,10 @@ select * from member where id = 'rex123';
 
 select id from member where name = 'ȫ�浿' and innate = '111111' and innate2 = '1111111';
 
-
-create table board(
-
-		
+select pw from member where pw = 'aaa123' and id = 'rex123';
 
 
-);
-
-
-
+select pw from member where id like 'rex123';
 
 
 

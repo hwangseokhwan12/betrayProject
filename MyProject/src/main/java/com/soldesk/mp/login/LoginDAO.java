@@ -170,7 +170,29 @@ public class LoginDAO {
 
 	}
 
+	public members checkPw(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		return new members(ss.getMapper(LoginMapper.class).checkPw(m));
+
+	}
 	
+	public void changepw(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		try {
+			
+			String pw = req.getParameter("pw");
+			
+			if (pw.equals(ss.getMapper(LoginMapper.class).loginOk(m).getPw())) {
+				
+				
+				
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
 	
 	
 }
