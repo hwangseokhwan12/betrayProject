@@ -136,10 +136,10 @@
 	
 }
 
-#changeBtn{
+#changeBtn,#deleteBtn{
 	
 	width : 80px;
-	height : 60px;
+	height : 62px;
 	position: absolute;
 	top: 380px;
 	right: 430px;
@@ -168,15 +168,49 @@
 #pwchk{
 	
 	display: none;
-	font-size: 11pt;
+	font-size: 10pt;
 	font-weight: 700;
 	color: red;
 	
 }
 
-
-#tr td{
+#deleteMember{
 	
-	
+	display: none;
 	
 }
+
+#deleteCheck{
+	
+	width: 500px;
+	border: #7d7d7d solid 2px;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-left : 30px;
+	padding-bottom: 3px;
+	position: absolute;
+	top: 380px;
+	left: 550px;
+	
+}
+
+#deleteCheck input{
+	
+	border: none;
+	border-bottom: #7d7d7d solid 2px;
+	font-size: 13pt;
+	font-weight: 800;
+	outline: none;
+	width: 90%;
+	
+}
+
+#innateChk{
+	
+	display: none;
+	font-size: 10pt;
+	font-weight: 700;
+	color: red;
+	
+}
+

@@ -23,7 +23,7 @@
 		goJoinIdMenu();
 		validCheck();
 		ChangePw();
-		
+		deleteMember();
 		
 	});
 </script>

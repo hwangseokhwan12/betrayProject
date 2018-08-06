@@ -1,4 +1,4 @@
-function goMyDataPage() {
+function goMyDataPage(){
 
 	location.href="go.myDataPage";
 	
@@ -34,8 +34,10 @@ function ChangePw() {
 						$("#changePwCheck").empty();
 						
 						var input = $("<input>").attr("placeholder","변경할 비밀번호를 입력하세요").attr("name","pw").attr("id","newPw");
+						var span = $("<span></span>").html("<p>");
 						
 						$("#changePwCheck").append(input);
+						$("#changePwCheck").append(span);
 						
 						$("#changePwForm").attr("onsubmit","return true;");
 						
@@ -65,7 +67,51 @@ function ChangePw() {
 		}
 		
 	});
+	
+}
 
+function deleteMember() {
+	
+	$("#memberDelete").click(function() {
+		
+		$("#pwChange").css("display","none");
+		$("#myDataPage").css("margin-left","120px");
+		$("#deleteMember").fadeToggle();
+		
+		$("#deleteBtn").click(function() {
+			
+			var id = $("#idHidden").val();
+			var innate = $("#deleteInnate").val();
+			
+			$.ajax({
+				
+				url : "check.innate",
+				data : {id : id},
+				success : function(json) {
+					
+					var ar = json.member;
+					var di = $("#deleteInnate").val();
+					
+					if (di == (ar[0].innate)) {
+						
+						$("#deleteMember form").attr("onsubmit","return true;");
+						
+					}else {
+						
+						$("#innateChk").css("display","inline");
+						
+					}
+					
+				}
+				
+			});
+			
+			
+		});
+		
+	});
 	
 	
 }
+
+

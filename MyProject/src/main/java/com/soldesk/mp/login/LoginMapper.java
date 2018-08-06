@@ -18,4 +18,8 @@ public interface LoginMapper {
 	
 	public abstract int changePw(member m);
 	
+	public abstract List<member> checkInnate(member m);
+	
+	public abstract int deleteMember(member m);
+	
 }

@@ -23,6 +23,18 @@
 			<input type="submit" value="확인" id="changeBtn" >
 		</form>
 	</div>
+	
+	<div id="deleteMember">
+		<form action="delete.member" onsubmit="return false;">
+			<input id="idHidden" name="id" value="${sessionScope.loginMember.id }">
+			<div id="deleteCheck">
+				<input placeholder="주민번호 앞자리를 입력하세요" name="innate" id="deleteInnate"><p>
+				<span id="innateChk">주민번호가 일치하지 않습니다.</span>
+			</div>
+			<input type="submit" value="확인" id="deleteBtn">
+		</form>
+	</div>
+	
 
 </body>
 </html>

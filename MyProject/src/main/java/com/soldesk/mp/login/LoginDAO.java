@@ -193,4 +193,30 @@ public class LoginDAO {
 
 	}
 
+	public members checkInnate(HttpServletRequest req, HttpServletResponse res, member m) {
+
+		return new members(ss.getMapper(LoginMapper.class).checkInnate(m));
+
+	}
+
+	public void deleteMember(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		try {
+
+			if (ss.getMapper(LoginMapper.class).deleteMember(m) == 1) {
+				
+				req.setAttribute("r", "삭제 성공");
+				logout(req, res);
+				
+			}else {
+				req.setAttribute("r", "삭제 실패");
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			req.setAttribute("r", "삭제 오류");
+		}
+		
+	}
+	
 }

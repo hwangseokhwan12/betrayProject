@@ -54,7 +54,22 @@ public class MyPageController {
 		
 	}
 	
+	@RequestMapping(value = "check.innate", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
+	public @ResponseBody members checkInnate(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		return LDAO.checkInnate(req, res, m);
+		
+	}	
 	
+	@RequestMapping(value = "delete.member", method = RequestMethod.GET)
+	public String deleteMember(HttpServletRequest req, HttpServletResponse res, member m) {
+		
+		LDAO.deleteMember(req, res, m);
+		LDAO.loginCheck(req, res);
+		req.setAttribute("content", "myPage/resultPage.jsp");
+		return "index"; 
+		
+	}
 	
 	
 }

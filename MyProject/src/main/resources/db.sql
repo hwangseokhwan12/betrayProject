@@ -14,7 +14,7 @@ select * from member;
 
 insert into member values('rich','aaa','È²','¼­¿ï','111111','1111111');
 
-delete from MEMBER where id = 'rich';
+delete from MEMBER where id = 'betray1228';
 
 select id from member where id like '%'||'b'||'%';
 
