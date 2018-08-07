@@ -1,0 +1,36 @@
+@charset "EUC-KR";
+
+#mainArea{
+	
+	border: none;
+	box-shadow: 2px 2px 2px #a5a5a5;
+	width: 130px;
+	height : 30px;
+	position: absolute;
+	left: 270px;
+	top: 170px;
+	font-weight: 800;
+	font-size: 12pt;
+	padding-top: 5px;
+	padding-left: 10px;
+	outline: none;
+	
+}
+
+#submenuArea{
+	
+	outline: none;
+	border: none;
+	box-shadow: 2px 2px 2px #a5a5a5;
+	width: 130px;
+	height : 30px;
+	position: absolute;
+	left: 270px;
+	top: 220px;
+	font-weight: 800;
+	font-size: 12pt;
+	padding-top: 5px;
+	padding-left: 10px;
+	display: none;
+	
+}

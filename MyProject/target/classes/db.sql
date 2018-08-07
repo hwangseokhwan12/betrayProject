@@ -24,8 +24,25 @@ select id from member where name = 'ȫ�浿' and innate = '111111' and innate2 = 
 
 select pw from member where pw = 'aaa123' and id = 'rex123';
 
-
 select pw from member where id like 'rex123';
 
+
+create table menu(
+
+	menuNo number(2) primary key,
+	mainmenu varchar2(15 char) not null,
+	submenu varchar2(20 char) not null
+
+);
+
+create table bulletin(
+
+	titleNo number(3) primary key,
+	title varchar2(30 char) not null,
+	writer varchar2(20 char) not null,
+	todate date not null,
+	submenu varchar2(15 char) not null
+
+);
 
 

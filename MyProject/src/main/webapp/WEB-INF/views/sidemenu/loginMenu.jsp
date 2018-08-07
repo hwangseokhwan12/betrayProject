@@ -12,7 +12,7 @@
 	<div id="loginOk">
 	<span id="loginName">${loginMember.id }</span>
 	<a id="goMyPage" href="go.myPage">마이페이지</a>
-	<a id="writeBoard">게시글 쓰기</a>
+	<a id="writeBoard" href="go.writeBulletin">게시글 쓰기</a>
 	<a id="logOut" href="logout.ok">로그아웃</a>
 	</div>
 	

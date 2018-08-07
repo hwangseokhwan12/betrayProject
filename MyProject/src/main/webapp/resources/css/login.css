@@ -1,5 +1,3 @@
-@charset "EUC-KR";
-
 #login{
 	
 	position: absolute;
@@ -174,12 +172,20 @@
 	position: absolute;
 	top: 14px;
 	right: 270px;
+	
+	
+}
+
+#loginOk a,#loginOk span {
+	
+	text-decoration: none;
 	font-size: 12pt;
 	font-weight: 700;
 	color: #a8a8a8;
 	padding-right: 3px;
 	
 }
+
 
 #logOut:hover,#goMyPage:hover,#writeBoard:hover{
 	
@@ -192,7 +198,7 @@
 	
 	text-decoration: none;
 	
-}
+} 
 
 #logOut{
 	
